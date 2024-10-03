@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import Container from './Container';
+import Link from 'next/link';
 
 const HoveredImage = ({ defaultImage, hoverImage, hotspots }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -38,10 +39,9 @@ const HoveredImage = ({ defaultImage, hoverImage, hotspots }) => {
 
         {/* Render the hotspots when image is hovered */}
         {isHovered && hotspots.map((hotspot, index) => (
-          <a
-            key={index}
-            href={hotspot.link}
-            className="absolute"
+          <Link href={hotspot.link} key={index}>
+          <div
+            className="absolute cursor-pointer"
             style={{
               top: hotspot.top,
               left: hotspot.left,
@@ -49,9 +49,9 @@ const HoveredImage = ({ defaultImage, hoverImage, hotspots }) => {
               height: hotspot.height,
             }}
           >
-            {/* Optional content like tooltip or transparent clickable area */}
-            <div className="w-full h-full bg-transparent hover:bg-blue-500 opacity-50"></div>
-          </a>
+            <span className="block w-full h-full bg-transparent hover:bg-blue-500 opacity-50"></span>
+          </div>
+        </Link>
         ))}
       </div>
     </Container>

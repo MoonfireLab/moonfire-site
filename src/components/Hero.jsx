@@ -5,7 +5,6 @@ import { hotspots } from '@/constants/mappedImagePoints';
 
 const Hero = () => {
   return <section
-  id="Home"
   className="overflow-hidden py-20 sm:py-32 lg:pb-32 xl:pb-3"
   >
     <Container>
