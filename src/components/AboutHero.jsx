@@ -21,7 +21,7 @@ const AboutHero = () => {
           {/* Right Side */}
           <div className="relative flex justify-center items-center">
             <Image
-              src="/images/moonfire-logo-nbg.png"
+              src="/images/Pocao-Lab.png"
               width={350}
               height={350}
               alt=""

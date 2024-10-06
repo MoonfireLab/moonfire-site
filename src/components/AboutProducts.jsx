@@ -27,7 +27,7 @@ const AboutProducts = () => {
           {/* Right Side */}
           <div className="relative flex justify-center items-center">
             <Image
-              src="/images/creators-logo.png"
+              src="/images/Moonfire-Creators-2-1.png"
               width={350}
               height={350}
               alt=""
@@ -48,7 +48,7 @@ const AboutProducts = () => {
           {/* Right Side */}
           <div className="relative flex justify-center items-center">
             <Image
-              src="/images/creators-logo.png"
+              src="/images/Moonfire-Games-2.png"
               width={350}
               height={350}
               alt=""
@@ -69,9 +69,9 @@ const AboutProducts = () => {
           {/* Right Side */}
           <div className="relative flex justify-center items-center">
             <Image
-              src="/images/creators-logo.png"
-              width={350}
-              height={350}
+              src="/images/Moonfire-Ads.png"
+              width={280}
+              height={280}
               alt=""
             ></Image>
           </div>
@@ -90,7 +90,7 @@ const AboutProducts = () => {
           {/* Right Side */}
           <div className="relative flex justify-center items-center">
             <Image
-              src="/images/creators-logo.png"
+              src="/images/Moonfire-Sound-2-1.png"
               width={350}
               height={350}
               alt=""
