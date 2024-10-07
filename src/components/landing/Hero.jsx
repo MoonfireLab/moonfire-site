@@ -1,6 +1,6 @@
 import React from 'react'
-import Container from './Container';
-import ImageWithHotspots from './HoveredImage';
+import Container from "@/components/containers/Container";
+import ImageWithHotspots from "@/components/hoveredImages/HoveredImage";
 import { hotspots } from '@/constants/mappedImagePoints';
 
 const Hero = () => {

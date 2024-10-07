@@ -1,9 +1,9 @@
 'use client'
 
-import Container from "./Container";
+import Container from "@/components/containers/Container";
 import React from "react";
-import Logo from "./Logo";
-import NavLinks from "./NavLinks";
+import Logo from "@/components/logos/Logo";
+import NavLinks from "@/components/headers/NavLinks";
 
 const Header = () => {
   return (

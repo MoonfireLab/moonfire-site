@@ -1,10 +1,8 @@
-'use client'
-
-import AboutHero from "@/components/AboutHero";
-import AboutProducts from "@/components/AboutProducts";
+import AboutHero from "@/components/about/AboutHero";
+import AboutProducts from "@/components/about/AboutProducts";
 import "/src/app/globals.css";
-import Header from "@/components/Header";
-import AboutPartners from "@/components/AboutPartners";
+import Header from "@/components/headers/Header";
+import AboutPartners from "@/components/about/AboutPartners";
 
 export default function About() {
     return (

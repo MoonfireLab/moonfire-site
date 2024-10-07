@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import Container from './Container';
+import Container from "@/components/containers/Container";
 import Link from 'next/link';
 
 const HoveredImage = ({ defaultImage, hoverImage, hotspots }) => {

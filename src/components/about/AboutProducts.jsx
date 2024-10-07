@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Container from "./Container";
+import Container from "@/components/containers/Container";
 import "/src/app/globals.css";
 import clsx from "clsx";
 

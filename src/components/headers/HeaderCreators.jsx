@@ -1,8 +1,8 @@
 'use client'
 
-import Container from "./Container";
+import Container from "@/components/containers/Container";
 import React from "react";
-import Logo from "./Logo";
+import Logo from "@/components/logos/Logo";
 
 const HeaderCreators = () => {
   return (
