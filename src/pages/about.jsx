@@ -1,7 +1,7 @@
 import AboutHero from "@/components/about/AboutHero";
 import AboutProducts from "@/components/about/AboutProducts";
 import "/src/app/globals.css";
-import Header from "@/components/headers/Header";
+import Header from "@/components/headers/HeaderAbout";
 import AboutPartners from "@/components/about/AboutPartners";
 
 export default function About() {

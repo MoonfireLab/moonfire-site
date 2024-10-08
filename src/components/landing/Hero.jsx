@@ -9,8 +9,8 @@ const Hero = () => {
   >
     <Container>
       <ImageWithHotspots
-          defaultImage="/images/moonfire-logo.png"
-          hoverImage="/images/moonfire-all-new.png"
+          defaultImage="/images/Pocao-Lab.png"
+          hoverImage="/images/Moonfire-All-V3.png"
           hotspots={hotspots}
       />
     </Container>

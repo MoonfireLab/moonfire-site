@@ -15,7 +15,6 @@ const AboutProducts = () => {
         </h1>
       </Container>
       <Container>
-        -
         <div className="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-12">
           {/* Left Side */}
           <div className="relative flex justify-center items-center">
@@ -36,7 +35,6 @@ const AboutProducts = () => {
         </div>
       </Container>
       <Container>
-        -
         <div className="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-28">
           {/* Left Side */}
           <div className="relative flex justify-center items-center">
@@ -57,7 +55,6 @@ const AboutProducts = () => {
         </div>
       </Container>
       <Container>
-        -
         <div className="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-28">
           {/* Left Side */}
           <div className="relative flex justify-center items-center">
@@ -78,7 +75,6 @@ const AboutProducts = () => {
         </div>
       </Container>
       <Container>
-        -
         <div className="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-28">
           {/* Left Side */}
           <div className="relative flex justify-center items-center">

@@ -14,25 +14,24 @@ const HoveredImage = ({ defaultImage, hoverImage, hotspots }) => {
   return (
     <Container className="relative flex justify-center items-center">
       <div
-        className="relative flex justify-center items-center w-[500px] h-[500px]"
+        className="relative flex justify-center items-center w-[500px] h-[600px]"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         {/* Image A (Default image) */}
         <Image
-
-          src="/images/moonfire-logo.png"
-          width={500}
-          height={500}
+          src={defaultImage}
+          width={300}
+          height={400}
           alt="Image A"
           className={`transition-opacity duration-500 ${isHovered ? 'opacity-0' : 'opacity-100'}`}
         />
 
         {/* Image B (Appears on hover) */}
         <Image
-          src="/images/moonfire-all-new.png"
+          src={hoverImage}
           width={500}
-          height={500}
+          height={600}
           alt="Image B"
           className={`absolute transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}
         />

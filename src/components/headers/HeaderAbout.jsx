@@ -2,7 +2,7 @@
 
 import Container from "@/components/containers/Container";
 import React from "react";
-import Logo from "@/components/logos/Logo";
+import Logo from "@/components/logos/LogoLab";
 import NavLinks from "@/components/headers/NavLinks";
 
 const Header = () => {
