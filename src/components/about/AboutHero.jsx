@@ -9,7 +9,6 @@ const AboutHero = () => {
       className="overflow-hidden py-2 sm:py-2 lg:pb-12 xl:pb-3"
     >
       <Container>
-        -
         <div className="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-8">
           {/* Left Side */}
           <div className="relative flex justify-center items-center">
