@@ -13,6 +13,15 @@ module.exports = {
         sans: ["Inter", ...defaultTheme.fontFamily.sans]
       },
     },
+    colors:{
+      moonfireGray: {
+        DEFAULT: '#0a0018',
+        light: '#22192f',
+      },
+      moonfireHeader: {
+        DEAFULT: '#3e304c',
+      },
+    },
   },
   plugins: [],
 };

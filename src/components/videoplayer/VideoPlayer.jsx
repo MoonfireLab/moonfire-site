@@ -8,6 +8,8 @@ const VideoPlayer = ({src, className}) => {
       <ReactPlayer
         url={src}
         controls={false}
+        width={"100%"}
+        height={"100%"}
         light={false}
         pip={true}
         playing={true}

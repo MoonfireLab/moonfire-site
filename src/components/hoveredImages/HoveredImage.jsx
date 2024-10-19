@@ -24,23 +24,23 @@ const HoveredImage = ({ defaultMedia, hoveredMedia, hotspots }) => {
 
   return (
       <div
-        className="relative flex justify-center items-center w-auto h-[640px]"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        className="relative flex justify-center items-center w-auto h-auto"
       >
         {/* Media A (Default media) */}
         <VideoPlayer
           src={defaultMedia}
-          className={`absolute transition-opacity duration-500 ${isHovered ? 'opacity-0' : 'opacity-100'}`} 
+          className={`absolute transition-opacity w-[55%] h-[55%] duration-500 ${isHovered ? 'opacity-0' : 'opacity-100'}`}
         />
 
         {/* Media B (Appears on hover) */}
         <Image
           src={hoveredMedia}
-          width={500}
-          height={600}
+          width={800}
+          height={800}
           alt="Image B"
-          className={`absolute transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}
+          className={`absolute transition-opacity xl:flex hidden duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         />
 
         {/* Render the hotspots when image is hovered */}
