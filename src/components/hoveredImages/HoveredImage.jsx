@@ -1,35 +1,42 @@
 'use client'
 
 import Image from 'next/image';
-import { useState } from 'react';
-import Container from "@/components/containers/Container";
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import VideoPlayer from '../videoplayer/VideoPlayer';
 
-const HoveredImage = ({ defaultImage, hoverImage, hotspots }) => {
+const HoveredImage = ({ defaultMedia, hoveredMedia, hotspots }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   const handleMouseEnter = () => setIsHovered(true);
   const handleMouseLeave = () => setIsHovered(false);
 
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return (
+      <div className="w-auto h-auto bg-black"></div>
+    );
+  }
+
   return (
-    <Container className="relative flex justify-center items-center">
       <div
-        className="relative flex justify-center items-center w-[500px] h-[600px]"
+        className="relative flex justify-center items-center w-auto h-[640px]"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {/* Image A (Default image) */}
-        <Image
-          src={defaultImage}
-          width={300}
-          height={400}
-          alt="Image A"
-          className={`transition-opacity duration-500 ${isHovered ? 'opacity-0' : 'opacity-100'}`}
+        {/* Media A (Default media) */}
+        <VideoPlayer
+          src={defaultMedia}
+          className={`absolute transition-opacity duration-500 ${isHovered ? 'opacity-0' : 'opacity-100'}`} 
         />
 
-        {/* Image B (Appears on hover) */}
+        {/* Media B (Appears on hover) */}
         <Image
-          src={hoverImage}
+          src={hoveredMedia}
           width={500}
           height={600}
           alt="Image B"
@@ -53,7 +60,6 @@ const HoveredImage = ({ defaultImage, hoverImage, hotspots }) => {
         </Link>
         ))}
       </div>
-    </Container>
   );
 };
 
